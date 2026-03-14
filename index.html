@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My GitHub Web Project</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#1d2671,#c33764);
+color:white;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:rgba(0,0,0,0.2);
+backdrop-filter:blur(10px);
+}
+
+nav h1{
+font-size:26px;
+font-weight:600;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:400;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#ffd369;
+}
+
+/* HERO */
+
+.hero{
+flex:1;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+max-width:600px;
+margin:auto;
+margin-bottom:30px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+padding:12px 28px;
+border-radius:30px;
+background:#ffd369;
+color:black;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* FEATURES */
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+padding:60px;
+background:rgba(255,255,255,0.05);
+}
+
+.card{
+padding:25px;
+border-radius:12px;
+background:rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:rgba(0,0,0,0.2);
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>MyProject</h1>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Features</a></li>
+<li><a href="#">GitHub</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div>
+
+<h2>Welcome to My GitHub Project</h2>
+
+<p>
+This is a modern responsive landing page designed for your GitHub repository.
+Clean UI, smooth animations, and mobile friendly layout.
+</p>
+
+<a class="btn" href="#">View Repository</a>
+
+</div>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+<h3>🚀 Fast</h3>
+<p>Optimized structure and lightweight design for fast loading.</p>
+</div>
+
+<div class="card">
+<h3>🎨 Attractive</h3>
+<p>Beautiful gradient UI and modern card layout.</p>
+</div>
+
+<div class="card">
+<h3>📱 Responsive</h3>
+<p>Works smoothly on desktop, tablet, and mobile devices.</p>
+</div>
+
+<div class="card">
+<h3>⚙ Easy Setup</h3>
+<p>Simple project structure ready to deploy.</p>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 My GitHub Project | Built with HTML & CSS</p>
+</footer>
+
+</body>
+</html>
